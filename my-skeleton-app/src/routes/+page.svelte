@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js">
-	import {  AppBar, Accordion, AccordionItem, AppShell, TreeViewItem, TreeView} from '@skeletonlabs/skeleton';
+	import {  AppBar, Accordion, AccordionItem, AppShell, TreeViewItem, TreeView, LightSwitch} from '@skeletonlabs/skeleton';
 </script>
 
 
@@ -15,9 +15,9 @@
    <AppBar>
 	<svelte:fragment slot="lead" ><h1 class="h2" style="position:relative; top:-3px;">🕌</h1></svelte:fragment>
 	<h2 class="h2" style="">
-		<span class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone" style="position:relative; left:-15px;">Masjid Library</span>
+		<span class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone" style="position:relative; left:-15px;">Masjid</span>
 		</h2>
-	<svelte:fragment slot="trail"><a href="https://discord.gg/masjid" type="button" class="btn variant-soft-primary">Discord</a></svelte:fragment>
+	<svelte:fragment slot="trail"><LightSwitch /><a href="https://discord.gg/masjid" type="button" class="btn variant-soft-primary">Discord</a></svelte:fragment>
    </AppBar>
 
 
@@ -25,7 +25,7 @@
 	<!-- ---- / ---- -->
 	<div class="card p-4" style=" position:relative; left:25%; top:100px; width:50%;">
 		
-
+       <h1 class="h1" style="position:relative; top:-10px; left:36%;">Library</h1>
 
 	<TreeView>
 		<TreeViewItem>
@@ -34,7 +34,7 @@
 				<TreeViewItem>
 					Mushaf
 					<svelte:fragment slot="children">
-					 test
+					<a class="anchor" href="https://quran.com">Quran</a>
 					</svelte:fragment>
 				</TreeViewItem>
 				<TreeViewItem>
